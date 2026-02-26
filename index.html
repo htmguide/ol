@@ -2,69 +2,70 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutLauncher - Скачать</title>
-    
-    <link rel="icon" type="image/jpeg" href="OL.jpg">
-    
+    <title>OutLauncher | TailesOut Project</title>
     <style>
         body {
-            background-color: #1a1a1a;
+            background-color: #1a1a1a; /* Тот самый цвет из лаунчера [cite: 2026-02-26] */
             color: white;
             font-family: 'Arial', sans-serif;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
-            text-align: center;
         }
-        .logo-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
-        }
-        h1 {
-            font-size: 42px;
-            color: #ffcc00;
-            margin-bottom: 30px;
-        }
-        .btn-download {
-            background-color: #00ff00;
-            color: black;
-            padding: 18px 35px;
+
+        /* Тот самый редирект в углу */
+        .news-link {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #ffcc00; /* Золотой как лого OL [cite: 2026-02-26] */
             text-decoration: none;
-            font-size: 22px;
             font-weight: bold;
-            border-radius: 8px;
+            font-size: 18px;
             transition: 0.3s;
+        }
+        .news-link:hover { text-shadow: 0 0 10px #ffcc00; }
+
+        .container { text-align: center; }
+
+        h1 { font-size: 120px; margin: 0; color: #ffcc00; } /* Лого OL [cite: 2026-02-26] */
+        p { color: #00ff00; font-weight: bold; font-size: 20px; }
+
+        .download-btn {
+            background-color: #00ff00; /* Зеленый как кнопка ИГРАТЬ [cite: 2026-02-26] */
+            color: black;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
             display: inline-block;
+            margin-top: 30px;
+            transition: transform 0.2s;
         }
-        .btn-download:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 255, 0, 0.4);
-        }
-        .footer {
-            margin-top: 50px;
-            font-size: 14px;
-            color: #666;
-        }
+        .download-btn:hover { transform: scale(1.1); background-color: #05cc05; }
+
+        .info { margin-top: 40px; color: gray; font-size: 14px; }
     </style>
 </head>
 <body>
 
-    <img src="OL.jpg" alt="Logo" class="logo-img">
-    
-    <h1>OutLauncher</h1>
-    
-    <a href="OutLauncher.exe" class="btn-download">СКАЧАТЬ LAUNCHER</a>
+    <a href="/news" class="news-link">НОВОСТИ</a>
 
-    <div class="footer">
-        <p>Official Download Site: olauncher.v6.navy</p>
-        <p>TailesOut Project © 2026</p>
+    <div class="container">
+        <h1>OL</h1>
+        <p>TailesOut Project</p>
+        
+        <a href="launcher.py" class="download-btn" download>СКАЧАТЬ ЛАУНЧЕР</a>
+
+        <div class="info">
+            <p style="color: gray; font-size: 14px;">
+                *Для работы нужна Java 21 и Python 3.10+ [cite: 2026-02-26]
+            </p>
+        </div>
     </div>
 
 </body>
