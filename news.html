@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости Проекта | OutLauncher</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Наш фирменный стиль [cite: 2026-02-26] */
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 16px;
+            border: 1px solid #00ff00;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .back-btn:hover { background: #00ff00; color: black; }
+
+        h1 { color: #ffcc00; font-size: 42px; letter-spacing: 2px; margin-bottom: 50px; }
+
+        .news-box {
+            background: #252525;
+            width: 100%;
+            max-width: 750px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border-top: 3px solid #ffcc00; /* Золотой акцент [cite: 2026-02-26] */
+        }
+
+        .news-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .tag { background: #00ff00; color: black; padding: 4px 10px; font-size: 12px; font-weight: bold; border-radius: 4px; }
+        .date { color: #aaa; font-size: 14px; }
+
+        .news-title { font-size: 24px; color: #fff; margin-bottom: 15px; }
+        .news-content { line-height: 1.7; color: #ccc; font-size: 16px; }
+        
+        .footer-note { margin-top: 50px; color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <a href="/" class="back-btn">На главную</a>
+
+    <h1>ОБНОВЛЕНИЯ ПРОЕКТА</h1>
+
+    <div class="news-box">
+        <div class="news-header">
+            <span class="tag">УСПЕХ</span>
+            <span class="date">26 февраля 2026</span>
+        </div>
+        <div class="news-title">Улучшение системы выбора версий</div>
+        <div class="news-content">
+            Уважаемые игроки! Мы рады сообщить, что работа над корректным распределением игровых версий завершена. [cite: 2026-02-26]
+            Теперь выбранная вами версия (например, 1.21.10) будет загружаться без каких-либо несоответствий. [cite: 2026-02-26] 
+            Благодарим за ваше терпение и помощь в тестировании! [cite: 2026-02-22]
+        </div>
+    </div>
+
+    <div class="news-box">
+        <div class="news-header">
+            <span class="tag">ИНФО</span>
+            <span class="date">25 февраля 2026</span>
+        </div>
+        <div class="news-title">Рекомендации по сетевому подключению</div>
+        <div class="news-content">
+            Для стабильного входа на серверы (включая DexLand) убедительно просим вас использовать актуальную версию Java 21. [cite: 2026-02-26] 
+            Это поможет избежать ошибок при кодировании пакетов данных и обеспечит максимально комфортный игровой процесс.
+        </div>
+    </div>
+
+    <div class="news-box" style="border-top-color: #00ff00;">
+        <div class="news-header">
+            <span class="tag">СТАРТ</span>
+            <span class="date">24 февраля 2026</span>
+        </div>
+        <div class="news-title">Запуск веб-ресурса OutLauncher</div>
+        <div class="news-content">
+            Добро пожаловать на наш новый сайт olauncher.v6.navy! 
+            Здесь вы всегда сможете найти актуальную версию лаунчера и свежие новости о развитии нашего проекта. [cite: 2026-02-26]
+            Рады видеть вас в нашем сообществе! [cite: 2026-02-22]
+        </div>
+    </div>
+
+    <div class="footer-note">С уважением, команда TailesOut Project [cite: 2026-02-22]</div>
+
+</body>
+</html>
