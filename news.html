@@ -5,7 +5,7 @@
     <title>Новости Проекта | OutLauncher</title>
     <style>
         body {
-            background-color: #1a1a1a; /* Наш фирменный стиль [cite: 2026-02-26] */
+            background-color: #1a1a1a;
             color: #f0f0f0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -29,74 +29,83 @@
         }
         .back-btn:hover { background: #00ff00; color: black; }
 
-        h1 { color: #ffcc00; font-size: 42px; letter-spacing: 2px; margin-bottom: 50px; }
+        h1 { color: #ffcc00; font-size: 42px; letter-spacing: 2px; margin-bottom: 50px; text-transform: uppercase; }
 
         .news-box {
             background: #252525;
             width: 100%;
-            max-width: 750px;
+            max-width: 800px;
             padding: 30px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            border-top: 3px solid #ffcc00; /* Золотой акцент [cite: 2026-02-26] */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border-top: 3px solid #ffcc00;
+            transition: transform 0.2s;
         }
+        .news-box:hover { transform: translateY(-5px); }
 
-        .news-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-        .tag { background: #00ff00; color: black; padding: 4px 10px; font-size: 12px; font-weight: bold; border-radius: 4px; }
-        .date { color: #aaa; font-size: 14px; }
+        .news-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .tag { background: #00ff00; color: black; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
+        .date { color: #777; font-size: 14px; }
 
-        .news-title { font-size: 24px; color: #fff; margin-bottom: 15px; }
-        .news-content { line-height: 1.7; color: #ccc; font-size: 16px; }
+        .news-title { font-size: 26px; color: #fff; margin-bottom: 15px; font-weight: bold; }
+        .news-content { line-height: 1.8; color: #ccc; font-size: 16px; }
         
-        .footer-note { margin-top: 50px; color: #666; font-style: italic; }
+        ul { color: #00ff00; list-style-type: '— '; padding-left: 20px; }
+        b { color: #fff; }
+
+        .footer-note { margin-top: 50px; color: #555; font-style: italic; font-size: 14px; }
     </style>
 </head>
 <body>
 
-    <a href="/" class="back-btn">На главную</a>
+    <a href="/" class="back-btn">← На главную</a>
 
-    <h1>ОБНОВЛЕНИЯ ПРОЕКТА</h1>
-
-    <div class="news-box">
-        <div class="news-header">
-            <span class="tag">УСПЕХ</span>
-            <span class="date">26 февраля 2026</span>
-        </div>
-        <div class="news-title">Улучшение системы выбора версий</div>
-        <div class="news-content">
-            Уважаемые игроки! Мы рады сообщить, что работа над корректным распределением игровых версий завершена. [cite: 2026-02-26]
-            Теперь выбранная вами версия (например, 1.21.10) будет загружаться без каких-либо несоответствий. [cite: 2026-02-26] 
-            Благодарим за ваше терпение и помощь в тестировании! [cite: 2026-02-22]
-        </div>
-    </div>
-
-    <div class="news-box">
-        <div class="news-header">
-            <span class="tag">ИНФО</span>
-            <span class="date">25 февраля 2026</span>
-        </div>
-        <div class="news-title">Рекомендации по сетевому подключению</div>
-        <div class="news-content">
-            Для стабильного входа на серверы (включая DexLand) убедительно просим вас использовать актуальную версию Java 21. [cite: 2026-02-26] 
-            Это поможет избежать ошибок при кодировании пакетов данных и обеспечит максимально комфортный игровой процесс.
-        </div>
-    </div>
+    <h1>Новости АутЛаунчера</h1>
 
     <div class="news-box" style="border-top-color: #00ff00;">
         <div class="news-header">
-            <span class="tag">СТАРТ</span>
-            <span class="date">24 февраля 2026</span>
+            <span class="tag" style="background: #ffcc00;">Будущее</span>
+            <span class="date">26 февраля 2026</span>
         </div>
-        <div class="news-title">Запуск веб-ресурса OutLauncher</div>
+        <div class="news-title">Глобальные планы развития проекта</div>
         <div class="news-content">
-            Добро пожаловать на наш новый сайт olauncher.v6.navy! 
-            Здесь вы всегда сможете найти актуальную версию лаунчера и свежие новости о развитии нашего проекта. [cite: 2026-02-26]
-            Рады видеть вас в нашем сообществе! [cite: 2026-02-22]
+            И так, в скором времени мы добавим кучу всего! А именно:
+            <ul>
+                <li><b>Система скинов</b> (OutLauncher Skins);</li>
+                <li><b>Добавление новых версий</b> (1.21, 1.20, 1.20.1, 1.20.2);</li>
+                <li><b>Улучшение интерфейса</b> (станет еще удобнее);</li>
+                <li><b>Улучшение функционала</b>.</li>
+            </ul>
+            И много всего другого ожидает АутЛаунчер! Также скоро будет масштабное улучшение интерфейса, а еще добавление <b>своих модов и ресурспаков</b> (текстурпаков тоже). 
+            <br><br>
+            И возможно мы создадим свой <b>магазин</b> с модами, картами, ресурспаками и текстурпаками. Вот и все новости на сегодня! [cite: 2026-02-22]
         </div>
     </div>
 
-    <div class="footer-note">С уважением, команда TailesOut Project [cite: 2026-02-22]</div>
+    <div class="news-box">
+        <div class="news-header">
+            <span class="tag">Фикс</span>
+            <span class="date">26 февраля 2026</span>
+        </div>
+        <div class="news-title">Исправление работы игровых версий</div>
+        <div class="news-content">
+            Мы успешно настроили систему выбора версий. Теперь при запуске 1.21.10 загружается именно выбранная вами версия. Ошибки с подменой файлов устранены. [cite: 2026-02-26]
+        </div>
+    </div>
+
+    <div class="news-box">
+        <div class="news-header">
+            <span class="tag">Инфо</span>
+            <span class="date">25 февраля 2026</span>
+        </div>
+        <div class="news-title">Решение ошибки EncoderException</div>
+        <div class="news-content">
+            Если вы столкнулись с проблемами при входе на серверы, рекомендуем обновить вашу Java до 21 версии. Это необходимо для стабильной игры на версиях 1.21+.
+        </div>
+    </div>
+
+    <div class="footer-note">С уважением, команда OutLauncher [cite: 2026-02-22]</div>
 
 </body>
 </html>
