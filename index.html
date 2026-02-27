@@ -2,71 +2,72 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>OutLauncher | TailesOut Project</title>
+    <title>OutLauncher — Твой путь в мир кубов</title>
+
+    <link rel="icon" type="image/jpeg" href="OL.jpg">
+    
     <style>
-        body {
-            background-color: #1a1a1a; /* Тот самый цвет из лаунчера [cite: 2026-02-26] */
-            color: white;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        body { background-color: #111; color: white; font-family: 'Arial', sans-serif; margin: 0; }
+        header { padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; }
+        
+        /* Ссылка на магазин в углу [cite: 2026-02-28] */
+        .shop-link { color: #FFFF00; text-decoration: none; font-weight: bold; font-size: 14px; }
+        
+        .hero { text-align: center; padding: 100px 20px; }
+        .logo { font-size: 80px; font-weight: bold; color: #FFFF00; margin-bottom: 10px; }
+        
+        .btn-download { 
+            background-color: #FFFF00; color: black; padding: 15px 40px; 
+            text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 20px; 
         }
-
-        /* Тот самый редирект в углу */
-        .news-link {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: #ffcc00; /* Золотой как лого OL [cite: 2026-02-26] */
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .news-link:hover { text-shadow: 0 0 10px #ffcc00; }
-
-        .container { text-align: center; }
-
-        h1 { font-size: 120px; margin: 0; color: #ffcc00; } /* Лого OL [cite: 2026-02-26] */
-        p { color: #00ff00; font-weight: bold; font-size: 20px; }
-
-        .download-btn {
-            background-color: #00ff00; /* Зеленый как кнопка ИГРАТЬ [cite: 2026-02-26] */
-            color: black;
-            padding: 20px 40px;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 30px;
-            transition: transform 0.2s;
-        }
-        .download-btn:hover { transform: scale(1.1); background-color: #05cc05; }
-
-        .info { margin-top: 40px; color: gray; font-size: 14px; }
+        
+        .section { padding: 50px 10% ; line-height: 1.6; }
+        .section h2 { color: #FFFF00; border-left: 5px solid #FFFF00; padding-left: 15px; }
+        
+        .requirements table { width: 100%; border-collapse: collapse; }
+        .requirements td { padding: 10px; border-bottom: 1px solid #333; }
+        
+        .footer-info { background: #1a1a1a; padding: 30px; text-align: center; margin-top: 50px; }
     </style>
 </head>
 <body>
 
-    <a href="/news" class="news-link">НОВОСТИ</a>
+<header>
+    <a href="/shop" class="shop-link">МАГАЗИН РП И МОДОВ</a>
+    <div>Новости | Контакты</div>
+</header>
 
-    <div class="container">
-        <h1>OL</h1>
-        <p>TailesOut Project</p>
-        
-        <a href="launcher.py" class="download-btn" download>СКАЧАТЬ ЛАУНЧЕР</a>
+<div class="hero">
+    <div class="logo">ØL</div>
+    <h1>OutLauncher</h1>
+    <p>Все версии от 1.0 до 1.21.1 в одном месте. Быстро. Просто. Желто.</p>
+    <br><br>
+    <a href="#download" class="btn-download">СКАЧАТЬ ЛАУНЧЕР</a>
+</div>
 
-        <div class="info">
-            <p style="color: gray; font-size: 14px;">
-                *Для работы нужна Java 21 и Python 3.10+ [cite: 2026-02-26]
-            </p>
-        </div>
-    </div>
+<div class="section">
+    <h2>О НАШЕМ САЙТЕ</h2>
+    <p>Добро пожаловать на официальный хаб OutLauncher! Здесь ты найдешь не только сам клиент, но и актуальные <b>новости</b> обновлений, а также наш фирменный <b>магазин</b>, где скоро появятся уникальные плюшки для твоего выживания. [cite: 2026-02-28]</p>
+</div>
+
+<div class="section">
+    <h2>ИСТОРИЯ ПРОЕКТА</h2>
+    <p>OutLauncher начинался как личный проект одного игрока, которому надоели сложные и перегруженные лаунчеры. Мы хотели создать что-то свое — легкое, с уникальным дизайном и полной свободой выбора версий. Сегодня это полноценный инструмент для тех, кто ценит стиль и скорость. [cite: 2026-02-28]</p>
+</div>
+
+<div class="section requirements">
+    <h2>СИСТЕМНЫЕ ТРЕБОВАНИЯ</h2>
+    <table>
+        <tr><td><b>Процессор:</b></td><td>Intel/AMD с частотой от 2.0 GHz</td></tr>
+        <tr><td><b>ОЗУ:</b></td><td>Минимум 2 ГБ (Рекомендуется 4 ГБ+)</td></tr>
+        <tr><td><b>Java:</b></td><td>Java 21 (уже встроена в твою систему) [cite: 2026-02-27]</td></tr>
+        <tr><td><b>ОС:</b></td><td>Windows 7, 10, 11 (64-bit)</td></tr>
+    </table>
+</div>
+
+<div class="footer-info">
+    <p>© 2026 OutLauncher Project. Все права защищены. [cite: 2026-02-28]</p>
+</div>
 
 </body>
 </html>
