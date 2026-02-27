@@ -2,110 +2,87 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Новости Проекта | OutLauncher</title>
+    <title>Новости OutLauncher</title>
+    <link rel="icon" type="image/jpeg" href="OL.jpg">
     <style>
-        body {
-            background-color: #1a1a1a;
-            color: #f0f0f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 50px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .back-btn {
-            position: absolute;
-            top: 25px;
-            left: 30px;
-            color: #00ff00;
-            text-decoration: none;
-            font-size: 16px;
-            border: 1px solid #00ff00;
-            padding: 8px 15px;
-            border-radius: 20px;
-            transition: 0.3s;
-        }
-        .back-btn:hover { background: #00ff00; color: black; }
-
-        h1 { color: #ffcc00; font-size: 42px; letter-spacing: 2px; margin-bottom: 50px; text-transform: uppercase; }
-
-        .news-box {
-            background: #252525;
-            width: 100%;
-            max-width: 800px;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            border-top: 3px solid #ffcc00;
-            transition: transform 0.2s;
-        }
-        .news-box:hover { transform: translateY(-5px); }
-
-        .news-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        .tag { background: #00ff00; color: black; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
-        .date { color: #777; font-size: 14px; }
-
-        .news-title { font-size: 26px; color: #fff; margin-bottom: 15px; font-weight: bold; }
-        .news-content { line-height: 1.8; color: #ccc; font-size: 16px; }
+        body { background-color: #111; color: white; font-family: 'Arial', sans-serif; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
         
-        ul { color: #00ff00; list-style-type: '— '; padding-left: 20px; }
-        b { color: #fff; }
-
-        .footer-note { margin-top: 50px; color: #555; font-style: italic; font-size: 14px; }
+        .back-btn { 
+            display: inline-block; padding: 8px 15px; border: 1px solid #00FF00; 
+            border-radius: 20px; color: #00FF00; text-decoration: none; font-size: 14px; 
+            margin-bottom: 30px;
+        }
+        
+        h1 { text-align: center; color: #FFFF00; font-size: 36px; text-transform: uppercase; margin-bottom: 40px; }
+        
+        .card { 
+            background: #1a1a1a; border-radius: 15px; padding: 25px; 
+            margin-bottom: 30px; position: relative;
+        }
+        
+        .tag { padding: 5px 12px; border-radius: 5px; font-weight: bold; font-size: 12px; color: black; }
+        .date { color: #666; font-size: 14px; float: right; }
+        
+        .card h2 { margin-top: 20px; font-size: 24px; }
+        .card p { color: #ccc; line-height: 1.6; }
+        .card ul { color: #ccc; padding-left: 20px; }
+        
+        .footer-text { text-align: center; color: #444; font-size: 12px; margin-top: 50px; }
     </style>
 </head>
 <body>
 
-    <a href="/" class="back-btn">← На главную</a>
+<div class="container">
+    <a href="index.html" class="back-btn">← На главную</a>
+    
+    <h1>НОВОСТИ АУТЛАУНЧЕРА</h1>
 
-    <h1>Новости АутЛаунчера</h1>
-
-    <div class="news-box" style="border-top-color: #00ff00;">
-        <div class="news-header">
-            <span class="tag" style="background: #ffcc00;">Будущее</span>
-            <span class="date">26 февраля 2026</span>
-        </div>
-        <div class="news-title">Глобальные планы развития проекта</div>
-        <div class="news-content">
-            И так, в скором времени мы добавим кучу всего! А именно:
-            <ul>
-                <li><b>Система скинов</b> (OutLauncher Skins);</li>
-                <li><b>Добавление новых версий</b> (1.21, 1.20, 1.20.1, 1.20.2);</li>
-                <li><b>Улучшение интерфейса</b> (станет еще удобнее);</li>
-                <li><b>Улучшение функционала</b>.</li>
-            </ul>
-            И много всего другого ожидает АутЛаунчер! Также скоро будет масштабное улучшение интерфейса, а еще добавление <b>своих модов и ресурспаков</b> (текстурпаков тоже). 
-            <br><br>
-            И возможно мы создадим свой <b>магазин</b> с модами, картами, ресурспаками и текстурпаками. Вот и все новости на сегодня! [cite: 2026-02-22]
-        </div>
+    <div class="card" style="border-left: 5px solid #FFFF00;">
+        <span class="tag" style="background: #FFFF00;">БУДУЩЕЕ</span>
+        <span class="date">26 февраля 2026</span>
+        <h2>Глобальные планы развития проекта</h2>
+        <p>И так, в скором времени мы добавим кучу всего! А именно:</p>
+        <ul>
+            <li>Система скинов <span style="color: #00FF00;">(OutLauncher Skins)</span>;</li>
+            <li>Добавление новых версий (1.21, 1.20, 1.20.1, 1.20.2);</li>
+            <li>Улучшение интерфейса;</li>
+            <li>Улучшение функционала.</li>
+        </ul>
+        <p>И возможно мы создадим свой <b>магазин</b> с модами и картами. [cite: 2026-02-22]</p>
     </div>
 
-    <div class="news-box">
-        <div class="news-header">
-            <span class="tag">Фикс</span>
-            <span class="date">26 февраля 2026</span>
-        </div>
-        <div class="news-title">Исправление работы игровых версий</div>
-        <div class="news-content">
-            Мы успешно настроили систему выбора версий. Теперь при запуске 1.21.10 загружается именно выбранная вами версия. Ошибки с подменой файлов устранены. [cite: 2026-02-26]
-        </div>
+    <div class="card" style="border-left: 5px solid #00FF00;">
+        <span class="tag" style="background: #00FF00;">ИНФО</span>
+        <span class="date">28 февраля 2026</span>
+        <h2>Обновление интерфейса и всех версий</h2>
+        <p>Мы успешно реализовали основные цели! Теперь играть стало еще удобнее. [cite: 2026-02-28]</p>
+        <ul>
+            <li>Добавлены все игровые версии от 1.0 до 1.21.1; [cite: 2026-02-28]</li>
+            <li>Полностью обновлен интерфейс лаунчера для стабильной работы; [cite: 2026-02-28]</li>
+            <li>Оптимизирован запуск на <b>Java 21</b>. [cite: 2026-02-27]</li>
+        </ul>
+        <p>Это необходимо для стабильной игры на последних версиях.</p>
     </div>
 
-    <div class="news-box">
-        <div class="news-header">
-            <span class="tag">Инфо</span>
-            <span class="date">25 февраля 2026</span>
-        </div>
-        <div class="news-title">Решение ошибки EncoderException</div>
-        <div class="news-content">
-            Если вы столкнулись с проблемами при входе на серверы, рекомендуем обновить вашу Java до 21 версии. Это необходимо для стабильной игры на версиях 1.21+.
-        </div>
+    <div class="card" style="border-left: 5px solid #00FF00;">
+        <span class="tag" style="background: #00FF00;">ФИКС</span>
+        <span class="date">26 февраля 2026</span>
+        <h2>Исправление работы игровых версий</h2>
+        <p>Мы успешно настроили систему выбора версий. Теперь при запуске 1.21.10 загружается именно выбранная вами версия. Ошибки с подменой файлов устранены. [cite: 2026-02-26]</p>
     </div>
 
-    <div class="footer-note">С уважением, команда OutLauncher [cite: 2026-02-22]</div>
+    <div class="card" style="border-left: 5px solid #FFFF00;">
+        <span class="tag" style="background: #00FF00;">ИНФО</span>
+        <span class="date">25 февраля 2026</span>
+        <h2>Решение ошибки EncoderException</h2>
+        <p>Если вы столкнулись с проблемами при входе на серверы, рекомендуем обновить вашу Java до 21 версии.</p>
+    </div>
+
+    <div class="footer-text">
+        С уважением, команда OutLauncher [cite: 2026-02-22]
+    </div>
+</div>
 
 </body>
 </html>
